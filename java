@@ -8,8 +8,47 @@ public class Test {
  public static void method(String s) {
   System.out.println("String method");
  }
+
 }
 
+*****
+
+
+public class NullCheckMain {
+ 
+    public static void main(String[] args) {
+        Integer i = new Integer(null);
+        String s = new String(null);
+    }
+}
+
+*****
+
+
+public class TestMethod {
+
+	public static void main(String[] args) {
+		TestMethod t = new ChildClass();
+		t.test();
+	}
+	
+	public static void test() {
+		System.out.println("In parent static method");
+	}
+}
+
+class ChildClass extends TestMethod {
+
+	public static void test() {
+		System.out.println("In Child static method");
+
+	}
+}
+
+
+
+
+*****
 
 
 
@@ -25,6 +64,7 @@ public class TestMethod {
 
 
 
+*****
 
 
 
@@ -41,16 +81,19 @@ public static void main(String[] args){
  }
 }
 
+*****
 
 Q3 — How does Garbage Collection prevent a Java application from going out of memory?
 Answer
 Java Garbage Collector does not prevent a Java application from going out of memory. It simply cleans the unused memory when an object is out of scope and no longer needed. As a result, garbage collection is not guaranteed to prevent a Java app from going out of memory.
+*****
 
 
 Q4 — Is Java “pass-by-reference” or “pass-by-value”?
 Answer
 Java is always “pass-by-value”. However, when we pass the value of an object, we pass the reference to it because the variables store the object reference, not the object itself. But this isn’t “pass-by-reference.” This could be confusing for beginners.
 
+*****
 
 public class Test{
  public static void main(String[] args){
@@ -58,6 +101,7 @@ public class Test{
  }
 }
 
+*****
 
 public class Test{
  public static void main(String[] arr){
@@ -66,6 +110,7 @@ public class Test{
  }
 }
 
+*****
 
 public class Test{ 
  public static void main(String[] args){ 
@@ -76,6 +121,7 @@ public class Test{
  } 
 }
 
+*****
 
 
 public class TestMethod {
@@ -116,6 +162,7 @@ class B extends A{
      }
 }
 
+*****
 
 
 
