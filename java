@@ -12,6 +12,22 @@ public class Test {
 
 
 
+
+public class TestMethod {
+
+	public static void main(String[] args) {
+	       String str1="Java2blog";
+	        String str2=new String(str1);
+	        System.out.println(str1==str2);
+	        System.out.println(str1.equals(str2));
+	}
+}
+
+
+
+
+
+
 public class Test{
 public static void main(String[] args){
   Integer num1 = 100;
